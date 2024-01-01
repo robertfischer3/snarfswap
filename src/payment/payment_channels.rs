@@ -9,19 +9,6 @@ mod payment_channel {
         open_transaction: Transaction,
     }
 
-    struct MultiSig {
-        pubkeys: Vec<PublicKey>,
-        // Threshold logic
-    }
-
-    impl MultiSig {
-
-        fn address(&self) -> String {
-            // Implement address generation
-            "test"
-        }
-
-    }
     impl PaymentChannel {
         // Generates initial on-chain funding transaction
         fn escrow_addr(&self) -> String {
